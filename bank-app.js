@@ -15,19 +15,15 @@ const users = [
 {id: 8, name: 'david', balance: 10000},
 {id: 9, name: 'susan', balance: 11000},
 {id: 10, name: 'linda', balance: 12000},
-];
-
+]; 
 class BankApp {
     constructor(users){
         this.users = users
-    }
-
+    } 
     getAllUsers(search){
         if(!search) return this.users
         return this.users.filter(user => user.name.includes(search.toLowerCase()))
-    }
-   
-}
-
+    } 
+} 
 const banking = new BankApp(users)
 console.log(banking.getAllUsers(""))
