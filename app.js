@@ -47,28 +47,28 @@ class Account {
         this.balance += newFunds  
     }
     
-    debitFunds(Debit){
-        this.balance -= Debit
+    debitFunds(debit){
+        this.balance -= debit
     }
 
 }
 
-const stanleyAccount = new Account(0, "stanley")
-const frankAccount = new Account(0, "frank")
+// const stanleyAccount = new Account(0, "stanley")
+// const frankAccount = new Account(0, "frank")
  
  
-let amountadd = 100;
-let debits = 20;
-stanleyAccount.addFunds(amountadd)
-console.log(stanleyAccount.getAccountDetails());
+// let amountadd = 100;
+// let debits = 20;
+// stanleyAccount.addFunds(amountadd)
+// console.log(stanleyAccount.getAccountDetails());
 
 
-frankAccount.addFunds(amountadd)
-console.log(frankAccount.getAccountDetails());
+// frankAccount.addFunds(amountadd)
+// console.log(frankAccount.getAccountDetails());
 
 
-frankAccount.debitFunds(debits)
-console.log(frankAccount.getAccountDetails());
+// frankAccount.debitFunds(debits)
+// console.log(frankAccount.getAccountDetails());
 
 
 // const b = new Aclass();
