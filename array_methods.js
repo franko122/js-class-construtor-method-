@@ -61,8 +61,12 @@ console.log( atUsers);
 
 //  4 concat 
 const Concat = users.concat(mainconCat => {
-    return mainconCat =Concat
+    return mainconCat 
 }) 
 console.log(Concat);
  
 // 5 copy withing 
+const wiThing = users.copyWithin(mainWith => {
+    return mainWith
+})
+console.log(wiThing);
