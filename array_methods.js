@@ -63,10 +63,16 @@ console.log( atUsers);
 const Concat = users.concat(mainconCat => {
     return mainconCat 
 }) 
-console.log(Concat);
+console.log(Concat.copyWithin(0, 3, 4));
  
 // 5 copy withing 
 const wiThing = users.copyWithin(mainWith => {
     return mainWith
 })
 console.log(wiThing);
+
+// 6 entries 
+const iterator = users.entries();
+console.log(iterator.next().value);
+
+// 
