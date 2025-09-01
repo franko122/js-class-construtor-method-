@@ -22,15 +22,17 @@
 //     return age < 40
 // })
 
-// console.log(youngAges)
-
+// console.log(youngAges) 
 
 
 
 //  my examples 
 
 
-// User Details 
+// User Details;
+
+
+
 const users = [{
        User1:{id:1,myName:"franklin",age:20,balance:200},
        User2:{id:2,myName:"Judith",age:30,balance:500}
@@ -49,30 +51,32 @@ const mapAllUsers = users.map(mainMap =>{
     return mainMap.User1 === 0
 })
 
-console.log(  mapAllUsers);
-
+console.log(  mapAllUsers); 
 
 // 3 at method
+
 const atUsers = users.at(mainAt =>{
     return mainAt
 }) 
 console.log( atUsers);
-
-
+ 
 //  4 concat 
 const Concat = users.concat(mainconCat => {
     return mainconCat 
-}) 
+});
+
 console.log(Concat.copyWithin(0, 3, 4));
  
 // 5 copy withing 
+
 const wiThing = users.copyWithin(mainWith => {
     return mainWith
 })
+
 console.log(wiThing);
 
 // 6 entries 
 const iterator = users.entries();
 console.log(iterator.next().value);
 
-// 
+// 7
