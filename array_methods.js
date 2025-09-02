@@ -103,10 +103,9 @@ console.log(users.fill(6));
 
  
 
-//  9 find  
-const array = [5, 12, 8, 130, 44];
+//  9 find   ;
 
-const found = array.find((element) => element > 10);
+const found = users.find((element) => element > 10);
 
 console.log(found);
 // Expected output: 12  
@@ -253,6 +252,35 @@ console.log("array:", users);
 // Expected output: "array:" Array ["three", "two", "one"];
 
 
+ 
+
+const firstElement = users.shift();
+
+console.log(users);
+// Expected output: Array [2, 3]
+
+console.log(firstElement);
+// Expected output: 1
 
 
 
+
+ 
+
+console.log(animals.slice(2));
+// Expected output: Array ["camel", "duck", "elephant"]
+
+console.log(animals.slice(2, 4));
+// Expected output: Array ["camel", "duck"]
+
+console.log(animals.slice(1, 5));
+// Expected output: Array ["bison", "camel", "duck", "elephant"]
+
+console.log(animals.slice(-2));
+// Expected output: Array ["duck", "elephant"]
+
+console.log(animals.slice(2, -1));
+// Expected output: Array ["camel", "duck"]
+
+console.log(animals.slice());
+// Expected output: Array ["ant", "bison", "camel", "duck", "elephant"]
