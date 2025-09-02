@@ -217,3 +217,26 @@ const animals = ["Dodo", "Tiger", "Penguin", "Dodo"];
 console.log(animals.lastIndexOf("Dodo")); 
 
 console.log(animals.lastIndexOf("Tiger")); 
+
+
+
+// push    
+const mapped = users.map((x) => x * 2);
+
+console.log(mapped); 
+
+
+//  reduce   
+const oki = users.map((x) => x * 2);
+
+console.log(oki); 
+
+
+// reduce right  
+
+const results = users.reduceRight((accumulator, currentValue) =>
+  accumulator.concat(currentValue),
+);
+
+console.log(results);   
+
