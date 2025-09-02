@@ -238,5 +238,21 @@ const results = users.reduceRight((accumulator, currentValue) =>
   accumulator.concat(currentValue),
 );
 
-console.log(results);   
+console.log(results);
+
+// reverse() 
+console.log("array:", users);
+// Expected output: "array:" Array ["one", "two", "three"]
+
+const reversed = users.reverse();
+console.log("reversed:", reversed);
+// Expected output: "reversed:" Array ["three", "two", "one"]
+
+// Careful: reverse is destructive -- it changes the original array.
+console.log("array:", users);
+// Expected output: "array:" Array ["three", "two", "one"];
+
+
+
+
 
