@@ -284,3 +284,13 @@ console.log(animals.slice(2, -1));
 
 console.log(animals.slice());
 // Expected output: Array ["ant", "bison", "camel", "duck", "elephant"]
+
+
+
+//  some
+ 
+// Checks whether an element is even
+const even = (element) => element % 2 === 0;
+
+console.log(users.some(even));
+// Expected output: true
