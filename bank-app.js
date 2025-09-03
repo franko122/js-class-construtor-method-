@@ -16,6 +16,7 @@
 // {id: 10, name: 'linda', balance: 12000},
 // ]; 
 
+
 class BankApp {
     constructor(users){
         this.users = users
@@ -25,5 +26,6 @@ class BankApp {
         return this.users.filter(user => user.name.includes(search.toLowerCase()))
     }  
 }  
+
 const banking = new BankApp(users)
 console.log(banking.getAllUsers("0"));
