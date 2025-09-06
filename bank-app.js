@@ -6,7 +6,7 @@
 // const users = [
 // {id: 1, name: 'frank', balance: 5000},
 // {id: 2, name: 'stanley', balance: 3000},
-// {id: 3, name: 'james', balance: 4000},
+// {id: 3, name: 'james', balance: 4000}, .
 // {id: 4, name: 'mercy', balance: 6000},
 // {id: 5, name: 'joy', balance: 7000},
 // {id: 6, name: 'mary', balance: 8000},
@@ -28,4 +28,4 @@ class BankApp {
 }  
 
 const banking = new BankApp(users)
-console.log(banking.getAllUsers("0"));
+console.log(banking.getAllUsers("6"));

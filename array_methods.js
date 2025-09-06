@@ -79,7 +79,7 @@ console.log(wiThing);
 const iterator = users.entries();
 console.log(iterator.next().value);
 
-//7 every \
+//7 every \ vc 
 const isBelowThreshold = (currentValue) => currentValue < 40;
 
 const array1 = [1, 30, 39, 29, 10, 13];
@@ -256,34 +256,19 @@ console.log("array:", users);
 
 const firstElement = users.shift();
 
-console.log(users);
-// Expected output: Array [2, 3]
+console.log(users); 
 
-console.log(firstElement);
-// Expected output: 1
+console.log(firstElement); 
 
+console.log(animals.slice(2)); 
+console.log(animals.slice(2, 4)); 
+console.log(animals.slice(1, 5)); 
 
+console.log(animals.slice(-2)); 
 
+console.log(animals.slice(2, -1)); 
 
- 
-
-console.log(animals.slice(2));
-// Expected output: Array ["camel", "duck", "elephant"]
-
-console.log(animals.slice(2, 4));
-// Expected output: Array ["camel", "duck"]
-
-console.log(animals.slice(1, 5));
-// Expected output: Array ["bison", "camel", "duck", "elephant"]
-
-console.log(animals.slice(-2));
-// Expected output: Array ["duck", "elephant"]
-
-console.log(animals.slice(2, -1));
-// Expected output: Array ["camel", "duck"]
-
-console.log(animals.slice());
-// Expected output: Array ["ant", "bison", "camel", "duck", "elephant"]
+console.log(animals.slice()); 
 
 
 
@@ -294,3 +279,98 @@ const even = (element) => element % 2 === 0;
 
 console.log(users.some(even));
 // Expected output: true
+
+
+// sort()
+const months = ["March", "Jan", "Feb", "Dec"];
+months.sort();
+console.log(months);
+// Expected output: Array ["Dec", "Feb", "Jan", "March"]
+
+const array = [1, 30, 4, 21, 100000];
+array.sort(ok =>{
+  ok 
+});
+console.log(array);
+// Expected output: Array [1, 100000, 21, 30, 4]
+
+
+// splice()
+const s = ["Jan", "March", "April", "June"];
+months.splice(1, 0, "Feb"); 
+console.log(s); 
+
+months.splice(4, 1, "May"); 
+console.log(s); 
+
+
+// Tolocalstoragr 
+const localeString = array.toLocaleString("en", { timeZone: "UTC" });
+
+console.log(localeString); 
+
+
+// toreverse
+
+const items = [1, 2, 3];
+console.log(items);  
+
+const reversedItems = items.toReversed();
+console.log(reversedItems);  
+console.log(items);  
+
+//  tosorted 
+const sortedMonths = months.toSorted();
+console.log(sortedMonths); 
+console.log(months);  
+
+const values = [1, 10, 21, 2];
+const sortedValues = values.toSorted((a, b) => a - b);
+console.log(sortedValues);  
+console.log(values);  
+
+// tosplice 
+
+ 
+const months2 = months.toSpliced(1, 0, "Feb");
+console.log(months2);  
+
+ 
+const months3 = months2.toSpliced(2, 2);
+console.log(months3);  
+
+ 
+const months4 = months3.toSpliced(1, 1, "Feb", "Mar");
+console.log(months4) 
+
+ 
+console.log(months);  
+
+// tostring
+ 
+console.log(array.toString()); 
+
+
+// To unshift 
+
+console.log(array.unshift(4, 5));  
+
+console.log(array); 
+
+//   value
+const iteratorss = array.values();
+
+for (const value of iterator) {
+  console.log(value);
+}
+
+console.log(iteratorss);
+
+
+
+
+// with
+
+const arrs = [1, 2, 3, 4, 5];
+console.log(arrs.with(2, 6));  
+console.log(arrs); 
